@@ -45,19 +45,13 @@
 </p>
     
 <script>
-    var b = document.getElementById('button2');
-    b.addEventListener("click",change);
-    
-    function change(){
-        var i = Math.floor(Math.random()*500)+1;
-        var j = Math.floor(Math.random()*500)+1;
-        b.style.left = i+"px";
-        b.style.top = j+"px";
-    }
     // Function to handle button click
     function handleButtonClick(buttonId) {
         if (buttonId === 'button2') {
-            document.querySelector('h1').innerText = 'Thank you for being my Valentine!';
+            var i = Math.floor(Math.random()*500)+1;
+            var j = Math.floor(Math.random()*500)+1;
+            button2.style.left = i+"px";
+            button2.style.top = j+"px";
         } else {
             alert('Bonita ❤️');
         }
