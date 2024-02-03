@@ -33,6 +33,15 @@
 <button id="button2">Nein</button>
 
 <script>
+    var b = document.querySelector("button2");
+    b.addEventListener("click",change);
+    
+    function change(){
+        var i = Math.floor(Math.random()*500)+1;
+        var j = Math.floor(Math.random()*500)+1;
+        b.style.left = i+"px";
+        b.style.top = j+"px";
+    }
     // Function to handle button click
     function handleButtonClick(buttonId) {
         if (buttonId === 'button2') {
