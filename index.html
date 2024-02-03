@@ -28,17 +28,30 @@
             display: block;
             position: absolute;
         }
+
+        .parent {
+            position: relative;
+        }
+        
+        .child {
+            position: absolute;
+            top: 100%;
+            left: 0;        
+        }
         
     </style>
 </head>
 <body>
-<div>
+<div class = 'parent'>
     <h1>U wanna be my Valentine?</h1>
 </div>
-<div>    
+    
+<div class = 'child'>    
     <button id="button1">Ja</button>
     <button id="button2" class='movingbutton'>Nono</button>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
     
 <script>
     // Function to handle button click
