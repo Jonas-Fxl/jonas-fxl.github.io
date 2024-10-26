@@ -1,80 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Will you be my Valentine</title>
-    <style>
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-            background-color: #f7f7f7; /* Light background color */
-        }
-
-        h1 {
-            color: #e60000; /* Red color */
-            font-family: 'cursive', sans-serif; /* Cursive font */
-        }
-
-        button {
-            margin: 10px;
-        }
-
-        .movingbutton {
-            display: block;
-            position: absolute;
-        }
-
-        .parent {
-            position: relative;
-        }
-        
-        .child {
-            position: absolute;
-            top: 100%;
-            left: 0;        
-        }
-        
-    </style>
+    <title>Krimi Adventskalender</title>
+    <!-- Verlinkung der CSS-Datei -->
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<div class = 'parent'>
-    <h1>U wanna be my Valentine?</h1>
-</div>
-    
-<div class = 'child'>    
-    <button id="button1">Ja</button>
-    <button id="button2" class='movingbutton'>Nono</button>
-</div>
+    <h1>Willkommen zum Krimi Adventskalender!</h1>
+    <p>Es ist ein mysteriöser Fall eingetreten, und nur du kannst das Geheimnis lösen! Jeden Tag erhältst du einen neuen Hinweis, der dich Schritt für Schritt zur Aufklärung führen wird. Kannst du den Fall bis zum 24. Dezember lösen?</p>
 
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
-    
-<script>
-    // Function to handle button click
-    function handleButtonClick(buttonId) {
-        if (buttonId === 'button2') {
-            var i = Math.floor(Math.random()*500)+1;
-            var j = Math.floor(Math.random()*500)+1;
-            button2.style.left = i+"px";
-            button2.style.top = j+"px";
-        } else {
-            alert('Bonita ❤️');
-        }
-    }
+    <div class="calendar">
+        <!-- Links für die 24 Tage des Adventskalenders -->
+        <div class="day" id="day1"><a href="days/day1.html">1</a></div>
+        <div class="day" id="day2"><a href="days/day2.html">2</a></div>
+        <div class="day" id="day3"><a href="days/day3.html">3</a></div>
+        <div class="day" id="day4"><a href="days/day4.html">4</a></div>
+        <div class="day" id="day5"><a href="days/day5.html">5</a></div>
+        <div class="day" id="day6"><a href="days/day6.html">6</a></div>
+        <div class="day" id="day7"><a href="days/day7.html">7</a></div>
+        <div class="day" id="day8"><a href="days/day8.html">8</a></div>
+        <div class="day" id="day9"><a href="days/day9.html">9</a></div>
+        <div class="day" id="day10"><a href="days/day10.html">10</a></div>
+        <div class="day" id="day11"><a href="days/day11.html">11</a></div>
+        <div class="day" id="day12"><a href="days/day12.html">12</a></div>
+        <div class="day" id="day13"><a href="days/day13.html">13</a></div>
+        <div class="day" id="day14"><a href="days/day14.html">14</a></div>
+        <div class="day" id="day15"><a href="days/day15.html">15</a></div>
+        <div class="day" id="day16"><a href="days/day16.html">16</a></div>
+        <div class="day" id="day17"><a href="days/day17.html">17</a></div>
+        <div class="day" id="day18"><a href="days/day18.html">18</a></div>
+        <div class="day" id="day19"><a href="days/day19.html">19</a></div>
+        <div class="day" id="day20"><a href="days/day20.html">20</a></div>
+        <div class="day" id="day21"><a href="days/day21.html">21</a></div>
+        <div class="day" id="day22"><a href="days/day22.html">22</a></div>
+        <div class="day" id="day23"><a href="days/day23.html">23</a></div>
+        <div class="day" id="day24"><a href="days/day24.html">24</a></div>
+    </div>
 
-    // Attach click event listeners to the buttons
-    document.getElementById('button1').addEventListener('click', function() {
-        handleButtonClick('button1');
-    });
-
-    document.getElementById('button2').addEventListener('click', function() {
-        handleButtonClick('button2');
-    });
-</script>
-
+    <!-- Verlinkung der JavaScript-Datei -->
+    <script src="js/index.js"></script>
 </body>
 </html>
