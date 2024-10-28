@@ -7,22 +7,24 @@ body, html {
     font-family: Arial, sans-serif;
     color: #fff;
     overflow: hidden;
+    background-color: #2a2a72; /* Nachtfarbe */
 }
 
 .background {
     background: linear-gradient(to bottom, #2a2a72, #009ffd);
-    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding-top: 20px;
+    min-height: 100vh;
 }
 
 h1 {
     color: #ffdf00;
     text-shadow: 1px 1px #000;
     font-size: 2em;
+    margin-bottom: 10px;
 }
 
 p {
@@ -30,16 +32,19 @@ p {
     font-size: 1.2em;
 }
 
+/* Dorf-Container für die Häuser */
 .village {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 10px;
+    gap: 15px;
+    width: 90%;
     max-width: 600px;
-    margin: auto;
+    margin: 0 auto;
+    padding-bottom: 30px;
 }
 
+/* Häuser-Stil */
 .house {
-    position: relative;
     width: 60px;
     height: 80px;
     background-color: #f08080;
@@ -52,6 +57,7 @@ p {
     justify-content: center;
     cursor: pointer;
     transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .house:hover {
@@ -59,6 +65,7 @@ p {
     background-color: #ff4500;
 }
 
+/* Beleuchtete Häuser */
 .house.open {
     background-color: #ffff66;
     color: #333;
