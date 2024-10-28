@@ -1,45 +1,47 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weihnachts-Krimi-Adventskalender</title>
-    <link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>True Crime Advent Calendar</title>
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class="background">
-        <h1>Weihnachts-Krimi-Adventskalender</h1>
-        <p>Jeden Tag ein Hinweis zum mysteriösen Fall!</p>
-        
-        <div class="village">
-            <!-- Die 24 Türchen als kleine Häuser -->
-            <div class="house" onclick="openDoor(1)">1</div>
-            <div class="house" onclick="openDoor(2)">2</div>
-            <div class="house" onclick="openDoor(3)">3</div>
-            <div class="house" onclick="openDoor(4)">4</div>
-            <div class="house" onclick="openDoor(5)">5</div>
-            <div class="house" onclick="openDoor(6)">6</div>
-            <div class="house" onclick="openDoor(7)">7</div>
-            <div class="house" onclick="openDoor(8)">8</div>
-            <div class="house" onclick="openDoor(9)">9</div>
-            <div class="house" onclick="openDoor(10)">10</div>
-            <div class="house" onclick="openDoor(11)">11</div>
-            <div class="house" onclick="openDoor(12)">12</div>
-            <div class="house" onclick="openDoor(13)">13</div>
-            <div class="house" onclick="openDoor(14)">14</div>
-            <div class="house" onclick="openDoor(15)">15</div>
-            <div class="house" onclick="openDoor(16)">16</div>
-            <div class="house" onclick="openDoor(17)">17</div>
-            <div class="house" onclick="openDoor(18)">18</div>
-            <div class="house" onclick="openDoor(19)">19</div>
-            <div class="house" onclick="openDoor(20)">20</div>
-            <div class="house" onclick="openDoor(21)">21</div>
-            <div class="house" onclick="openDoor(22)">22</div>
-            <div class="house" onclick="openDoor(23)">23</div>
-            <div class="house" onclick="openDoor(24)">24</div>
-        </div>
+  <h1>Bubus Adventskalender</h1>
+  <div class="calendar">
+    <a href="days/day1.html" class="day" data-day="1">1</a>
+    <a href="days/day2.html" class="day" data-day="2">2</a>
+    <a href="days/day3.html" class="day" data-day="3">3</a>
+    <a href="days/day4.html" class="day" data-day="4">4</a>
+    <a href="days/day5.html" class="day" data-day="5">5</a>
+    <a href="days/day6.html" class="day" data-day="6">6</a>
+    <a href="days/day7.html" class="day" data-day="7">7</a>
+    <a href="days/day8.html" class="day" data-day="8">8</a>
+    <a href="days/day9.html" class="day" data-day="9">9</a>
+    <a href="days/day10.html" class="day" data-day="10">10</a>
+    <a href="days/day11.html" class="day" data-day="11">11</a>
+    <a href="days/day12.html" class="day" data-day="12">12</a>
+    <a href="days/day13.html" class="day" data-day="13">13</a>
+    <a href="days/day14.html" class="day" data-day="14">14</a>
+    <a href="days/day15.html" class="day" data-day="15">15</a>
+    <a href="days/day16.html" class="day" data-day="16">16</a>
+    <a href="days/day17.html" class="day" data-day="17">17</a>
+    <a href="days/day18.html" class="day" data-day="18">18</a>
+    <a href="days/day19.html" class="day" data-day="19">19</a>
+    <a href="days/day20.html" class="day" data-day="20">20</a>
+    <a href="days/day21.html" class="day" data-day="21">21</a>
+    <a href="days/day22.html" class="day" data-day="22">22</a>
+    <a href="days/day23.html" class="day" data-day="23">23</a>
+    <a href="days/day24.html" class="day" data-day="24">24</a>
+  </div>
+  
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="storyContent"></div>
     </div>
+  </div>
 
-    <script src="js/index.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
