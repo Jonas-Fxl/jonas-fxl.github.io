@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #1e1e1e;
+  background: url('../images/index.webp') no-repeat center center fixed; /* Hintergrundbild */
   color: #e0e0e0;
   text-align: center;
   margin: 0;
@@ -10,30 +10,30 @@ body {
 
 h1 {
   margin-top: 20px;
-  font-size: 2.5em;
+  font-size: 2.2em;
   color: #ff3d00; /* A bold color for the title */
 }
 
 /* Calendar Styles */
 .calendar {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 15px;
-  width: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Dynamisch für mobile Geräte */
+  gap: 10px;
+  width: 90%;
   margin: 20px auto;
-  padding: 20px;
+  padding: 15px;
   border: 2px solid #ff3d00; /* Border around the calendar */
   border-radius: 10px;
   background: #2a2a2a; /* Background color for the calendar */
 }
 
 .day {
-  padding: 20px;
+  padding: 15px;
   background-color: #444;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
-  font-size: 1.5em; /* Larger font for the day numbers */
+  font-size: 1.3em; /* Slightly smaller for mobile readability */
   color: #fff; /* White text for better visibility */
   text-decoration: none; /* Remove underline */
 }
@@ -51,7 +51,7 @@ h1 {
 
 /* Container for Day Content */
 .container {
-  max-width: 800px;
+  max-width: 90%;
   margin: 20px auto;
   padding: 20px;
   background: #2a2a2a;
@@ -59,8 +59,11 @@ h1 {
   border: 2px solid #ff3d00; /* Border for day content */
 }
 
+/* Images inside the content */
 img {
   border-radius: 5px;
+  width: 100%; /* Full-width for images on mobile */
+  height: auto;
 }
 
 /* Styles for Links */
@@ -83,13 +86,14 @@ a {
   background: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
+  z-index: 1000; /* Ensure modal is on top */
 }
 
 .modal-content {
   background: #333;
   padding: 20px;
   border-radius: 5px;
-  max-width: 600px;
+  max-width: 90%;
   margin: auto;
   position: relative;
 }
@@ -100,4 +104,34 @@ a {
   right: 15px;
   font-size: 24px;
   cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2em; /* Adjust heading size for smaller devices */
+  }
+
+  .calendar {
+      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Adjust grid for smaller screens */
+      gap: 8px; /* Smaller gap on mobile */
+  }
+
+  .day {
+      padding: 10px;
+      font-size: 1.1em; /* Smaller font for mobile devices */
+  }
+
+  .container {
+      padding: 15px;
+  }
+
+  a {
+      font-size: 1em;
+      padding: 10px;
+  }
+
+  .modal-content {
+      padding: 15px;
+  }
 }
