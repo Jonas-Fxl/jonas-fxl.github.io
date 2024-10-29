@@ -1,81 +1,79 @@
 /* Global Styles */
-body {
-  font-family: 'Arial', sans-serif;
-  background: url('../images/index.webp') no-repeat center center fixed; /* Hintergrundbild */
-  color: #e0e0e0;
-  text-align: center;
+body, html {
   margin: 0;
   padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+/* Hintergrund und Header */
+.background {
+  min-height: 100vh;
+  background: url('../images/index.webp') no-repeat center center fixed; /* Das Hintergrundbild einfügen */
+  padding: 20px;
 }
 
 h1 {
   margin-top: 20px;
-  font-size: 2.2em;
-  color: #ff3d00; /* A bold color for the title */
+  font-size: 2.5em;
+  color: #ff3d00; /* Eine kräftige Farbe für den Titel */
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #e0e0e0; /* Hellere Farbe für den Beschreibungstext */
 }
 
 /* Calendar Styles */
 .calendar {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Dynamisch für mobile Geräte */
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 15px;
   width: 90%;
+  max-width: 600px; /* Begrenzung der Breite für größere Bildschirme */
   margin: 20px auto;
-  padding: 15px;
-  border: 2px solid #ff3d00; /* Border around the calendar */
+  padding: 20px;
   border-radius: 10px;
-  background: #2a2a2a; /* Background color for the calendar */
+  background: rgba(42, 42, 42, 0.5);
 }
 
+/* Stil für jedes Türchen (Tag) */
 .day {
-  padding: 15px;
-  background-color: #444;
+  position: relative;
+  padding: 0;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
-  font-size: 1.3em; /* Slightly smaller for mobile readability */
-  color: #fff; /* White text for better visibility */
-  text-decoration: none; /* Remove underline */
+  text-align: center;
+  overflow: hidden;
+  display: block; /* Damit das Linkelement den gesamten Tag-Bereich umfasst */
 }
 
-.day:hover {
-  background-color: #666;
-  transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-.locked {
-  background-color: #222;
-  color: #888; /* Dimmed text for locked days */
-  cursor: not-allowed;
-}
-
-/* Container for Day Content */
-.container {
-  max-width: 90%;
-  margin: 20px auto;
-  padding: 20px;
-  background: #2a2a2a;
-  border-radius: 10px;
-  border: 2px solid #ff3d00; /* Border for day content */
-}
-
-/* Images inside the content */
-img {
-  border-radius: 5px;
-  width: 100%; /* Full-width for images on mobile */
+.day img {
+  width: 100%;
   height: auto;
+  border-radius: 5px; /* Runde die Ecken des Icons ab */
+  transition: transform 0.2s;
+}
+
+.day:hover img {
+  transform: scale(1.05); /* Leichtes Vergrößern beim Hover-Effekt */
 }
 
 /* Styles for Links */
 a {
-  color: #ff3d00; /* Color for links */
-  text-decoration: none; /* Remove underline */
+  color: #ff3d00; /* Farbe für die Links */
+  text-decoration: none; /* Unterstrich entfernen */
   font-weight: bold;
   margin-top: 20px;
-  display: inline-block; /* Center the back link */
+  display: inline-block; /* Um den Zurück-Link zu zentrieren */
 }
 
-/* Modal Styles (if used) */
+/* Modal Styles (falls verwendet) */
 .modal {
   display: none;
   position: fixed;
@@ -86,7 +84,7 @@ a {
   background: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensure modal is on top */
+  z-index: 1000; /* Sicherstellen, dass das Modal im Vordergrund bleibt */
 }
 
 .modal-content {
@@ -109,17 +107,17 @@ a {
 /* Responsive Styles */
 @media (max-width: 768px) {
   h1 {
-      font-size: 2em; /* Adjust heading size for smaller devices */
+      font-size: 2em; /* Überschrift für kleinere Geräte anpassen */
   }
 
   .calendar {
-      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Adjust grid for smaller screens */
-      gap: 8px; /* Smaller gap on mobile */
+      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Kleinere Spalten für kleinere Bildschirme */
+      gap: 10px; /* Kleinere Abstände auf Mobilgeräten */
   }
 
   .day {
       padding: 10px;
-      font-size: 1.1em; /* Smaller font for mobile devices */
+      font-size: 1em; /* Kleinere Schriftgröße für mobile Geräte */
   }
 
   .container {
