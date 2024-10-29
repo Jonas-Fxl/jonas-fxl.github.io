@@ -18,10 +18,13 @@ body, html {
 
 h1 {
   margin-top: 20px;
-  font-size: 2.5em;
-  color: #ff3d00; /* Eine kräftige Farbe für den Titel */
+  font-size: 2.8em;
+  color: #d4af37; /* Eine festliche, goldene Farbe */
+  font-family: 'Cinzel', serif; /* Eine elegante Schriftart, die edel, aber auch dramatisch wirkt */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8), 0 -2px 4px rgba(0, 0, 0, 0.5); /* Tiefer Schatten für Spannung */
+  letter-spacing: 2px; /* Etwas größere Buchstabenabstände für mehr Dramatik */
+  padding: 10px 0;
 }
-
 p {
   font-size: 1.2em;
   margin-bottom: 20px;
@@ -31,7 +34,7 @@ p {
 /* Calendar Styles */
 .calendar {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 15px;
   width: 90%;
   max-width: 600px; /* Begrenzung der Breite für größere Bildschirme */
