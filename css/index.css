@@ -114,7 +114,7 @@ a {
   }
 
   .calendar {
-      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Kleinere Spalten für kleinere Bildschirme */
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Kleinere Spalten für kleinere Bildschirme */
       gap: 10px; /* Kleinere Abstände auf Mobilgeräten */
   }
 
