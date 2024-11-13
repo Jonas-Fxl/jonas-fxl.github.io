@@ -3,7 +3,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   background: url('../images/index.webp') no-repeat center center fixed;
   background-size: cover;
   color: #e0e0e0;
@@ -21,6 +21,7 @@ header {
 }
 
 h1 {
+  width: 100%;
   margin-top: 20px;
   font-size: 3em;
   color: #ffcc33;
@@ -44,7 +45,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
   width: 90%;
-  max-width: 393px;
+  max-width: 100%;
   margin: 40px auto;
   padding: 20px;
   border-radius: 25px;
@@ -65,13 +66,12 @@ p {
   text-align: center;
   overflow: hidden;
   display: block;
-  background: rgba(255, 255, 255, 0.9) url('../images/gift_box.webp') no-repeat center/cover;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
   border: 3px solid #ff3d00;
 }
 
 .day:before {
-  content: "Fall Nr. " counter(day-counter);
+  content: "Hinweis";
   position: absolute;
   top: 15px;
   left: 15px;
@@ -172,13 +172,15 @@ a:hover {
   h1 {
       font-size: 2.2em;
       margin-top: 10px;
+      width: 100%;
   }
 
   .calendar {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 15px;
       width: 95%;
       padding: 20px;
+      margin: 0 auto;
   }
 
   .day {
@@ -195,10 +197,11 @@ a:hover {
   h1 {
       font-size: 2em;
       margin-top: 10px;
+      width: 100%;
   }
 
   .calendar {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 10px;
       width: 100%;
       padding: 15px;
