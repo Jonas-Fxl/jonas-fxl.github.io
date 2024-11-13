@@ -6,9 +6,9 @@ body, html {
   font-family: 'Arial', sans-serif;
   background: url('../images/index.webp') no-repeat center center fixed;
   background-size: cover;
-
   color: #e0e0e0;
   text-align: center;
+  overflow-x: hidden; /* Verhindert horizontales Scrollen */
 }
 
 /* Hintergrund und Header */
@@ -24,11 +24,12 @@ header {
 h1 {
   margin-top: 20px;
   font-size: 3em;
-  color: #ffcc33; /* Goldene Farbe für weihnachtlichen Touch */
-  font-family: 'Cinzel', serif; /* Elegante Schriftart */
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9), 0 -2px 4px rgba(255, 255, 255, 0.5); /* Tiefer Schatten für Spannung und weihnachtliche Stimmung */
+  color: #ffcc33;
+  font-family: 'Cinzel', serif;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9), 0 -2px 4px rgba(255, 255, 255, 0.5);
   letter-spacing: 3px;
   padding: 10px 0;
+  text-align: center;
 }
 
 p {
@@ -51,6 +52,7 @@ p {
   background: rgba(0, 0, 0, 0.7);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
   border: 5px solid #ffcc33;
+  text-align: center;
 }
 
 /* Stil für jedes Türchen (Tag) als Geschenkboxen */
@@ -70,22 +72,21 @@ p {
 }
 
 .day:before {
-  counter-increment: day-counter;
-  content: "Hinweis";
+  content: "Fall Nr. " counter(day-counter);
   position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%) rotate(-10deg);
-  background: rgba(255, 61, 0, 0.9);
-  padding: 5px 15px;
-  font-size: 1.4em;
+  top: 15px;
+  left: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px 12px;
+  font-size: 1.2em;
   font-weight: bold;
-  color: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  color: #ffcc33;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 
 .day:after {
-  content: "Steng geheim";
+  content: "Streng geheim";
   position: absolute;
   bottom: 10px;
   right: 10px;
