@@ -4,23 +4,19 @@ body, html {
   padding: 0;
   height: 100%;
   font-family: 'Arial', sans-serif;
-  background-color: #1e1e1e;
+  background: url('../images/index.webp') no-repeat center center fixed, #1e1e1e;
+  background-size: cover;
   color: #e0e0e0;
   text-align: center;
 }
 
 /* Hintergrund und Header */
-.background {
-  min-height: 100vh;
-  background: url('../images/index.webp') no-repeat center center fixed; /* Das Hintergrundbild einfügen */
-  background-size: cover;
-  padding: 20px;
-}
+
 
 header {
   background-color: rgba(30, 30, 30, 0.8);
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
 }
 
 h1 {
@@ -43,14 +39,14 @@ p {
 .calendar {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 15px;
+  gap: 20px;
   width: 90%;
   max-width: 800px; /* Begrenzung der Breite für größere Bildschirme */
   margin: 20px auto;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
   background: rgba(42, 42, 42, 0.8);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
 }
 
 /* Stil für jedes Türchen (Tag) */
@@ -69,17 +65,17 @@ p {
   width: 100%;
   height: auto;
   border-radius: 10px; /* Runde die Ecken des Icons ab */
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
 }
 
 .day:hover img {
-  transform: scale(1.1); /* Leichtes Vergrößern beim Hover-Effekt */
+  transform: scale(1.1) rotate(2deg); /* Leichtes Vergrößern beim Hover-Effekt */
   box-shadow: 0 4px 12px rgba(255, 61, 0, 0.5);
 }
 
 .day:hover {
   transform: translateY(-5px); /* Leichtes Anheben beim Hover-Effekt */
-  background-color: rgba(255, 61, 0, 0.1);
+  background-color: rgba(255, 61, 0, 0.2);
 }
 
 /* Styles for Links */
