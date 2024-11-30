@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('../images/day2_bg.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+h1 {
+    color: #ffdf00;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+  }
+
+.scene {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+}
+
+h2 {
+    color: #ffdf00;
+    text-align: center;
+    margin: 30px 0 15px;
+    font-size: 1.8em;
+}
+
+.note {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-left: 5px solid #ffdf00;
+    font-style: italic;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.characters, .crime-scene, .investigation {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+p strong {
+    color: #ffdf00;
+    font-weight: bold;
+}
+
