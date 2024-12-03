@@ -1,0 +1,130 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('../images/day2_bg.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.scene {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+}
+h1 {
+    color: #ffdf00;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+  }
+
+h2, h3 {
+    color: #ffdf00;
+    text-align: center;
+    margin: 30px 0 15px;
+    font-size: 1.8em;
+}
+
+.note {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-left: 5px solid #ffdf00;
+    font-style: italic;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.interact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1em;
+    background-color: #ffdf00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.interact-button:hover {
+    background-color: #ffb700;
+}
+
+#combination {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 2px solid #ffdf00;
+    max-width: 200px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+p strong {
+    color: #ffdf00;
+    font-weight: bold;
+}
+
+.characters, .door-opening, .dark-find, .third-victim, .sneijder-theory, .next-door, .cliffhanger {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.search-option {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffdf00;
+    border: 2px solid #ffdf00;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.search-option:hover {
+    background-color: #ffdf00;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+.hint {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+a {
+    color: #ffdf00;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  a:hover {
+    background: #ffdf00;
+    color: #333;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  }
